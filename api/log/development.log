@@ -1,0 +1,977 @@
+# Logfile created on 2023-01-04 07:34:24 +0000 by logger.rb/61378
+I, [2023-01-04T07:34:24.347444 #1]  INFO -- : Started GET "/tasks" for 172.21.0.1 at 2023-01-04 07:34:24 +0000
+I, [2023-01-04T07:34:24.364614 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+D, [2023-01-04T07:34:24.860684 #1] DEBUG -- :   [1m[35m (14.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2023-01-04T07:34:24.862136 #1] DEBUG -- :   ↳ /usr/local/bundle/gems/activerecord-5.2.8/lib/active_record/log_subscriber.rb:98
+F, [2023-01-04T07:34:24.871604 #1] FATAL -- :   
+F, [2023-01-04T07:34:24.873411 #1] FATAL -- : ActionController::RoutingError (No route matches [GET] "/tasks"):
+F, [2023-01-04T07:34:24.875760 #1] FATAL -- :   
+F, [2023-01-04T07:34:24.877721 #1] FATAL -- : actionpack (5.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2023-01-04T07:34:24.914419 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2023-01-04T07:34:24.937661 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2023-01-04T07:34:24.941004 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+I, [2023-01-04T07:34:24.987415 #1]  INFO -- :   Rendered collection of /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (25.3ms)
+I, [2023-01-04T07:34:25.011938 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.7ms)
+I, [2023-01-04T07:34:25.025533 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2023-01-04T07:34:25.028600 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+I, [2023-01-04T07:34:25.030896 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (114.6ms)
+I, [2023-01-04T07:34:37.269848 #1]  INFO -- : Started GET "/api/v1/tasks" for 172.21.0.1 at 2023-01-04 07:34:37 +0000
+I, [2023-01-04T07:34:37.272434 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2023-01-04T07:34:37.316776 #1] FATAL -- :   
+F, [2023-01-04T07:34:37.318862 #1] FATAL -- : ActionController::RoutingError (uninitialized constant Api):
+F, [2023-01-04T07:34:37.320384 #1] FATAL -- :   
+F, [2023-01-04T07:34:37.322814 #1] FATAL -- : activesupport (5.2.8) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.8) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.8) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.8) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.8) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.8) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.8) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.8) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.8) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.8) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.8) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.8) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.8) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.3.1) lib/rack/etag.rb:27:in `call'
+rack (2.2.3.1) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3.1) lib/rack/head.rb:12:in `call'
+activerecord (5.2.8) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.8) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.8) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2023-01-04T07:55:46.436049 #1]  INFO -- : Started GET "/api/v1/tasks" for 172.21.0.1 at 2023-01-04 07:55:46 +0000
+I, [2023-01-04T07:55:46.438635 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2023-01-04T07:55:46.664877 #1] FATAL -- :   
+F, [2023-01-04T07:55:46.666124 #1] FATAL -- : ActionController::RoutingError (uninitialized constant ApplicationController):
+F, [2023-01-04T07:55:46.667426 #1] FATAL -- :   
+F, [2023-01-04T07:55:46.668867 #1] FATAL -- : app/controllers/api/v1/tasks_controller.rb:1:in `<top (required)>'
+I, [2023-01-04T07:55:57.831301 #1]  INFO -- : Started GET "/api/v1/tasks" for 172.21.0.1 at 2023-01-04 07:55:57 +0000
+I, [2023-01-04T07:55:57.834350 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2023-01-04T07:55:57.878954 #1] FATAL -- :   
+F, [2023-01-04T07:55:57.880896 #1] FATAL -- : ActionController::RoutingError (uninitialized constant ApplicationController):
+F, [2023-01-04T07:55:57.882077 #1] FATAL -- :   
+F, [2023-01-04T07:55:57.883808 #1] FATAL -- : app/controllers/api/v1/tasks_controller.rb:1:in `<top (required)>'
+I, [2023-01-04T07:56:06.773370 #1]  INFO -- : Started GET "/tasks" for 172.21.0.1 at 2023-01-04 07:56:06 +0000
+I, [2023-01-04T07:56:06.776181 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2023-01-04T07:56:06.780468 #1] FATAL -- :   
+F, [2023-01-04T07:56:06.781827 #1] FATAL -- : ActionController::RoutingError (No route matches [GET] "/tasks"):
+F, [2023-01-04T07:56:06.783159 #1] FATAL -- :   
+F, [2023-01-04T07:56:06.784175 #1] FATAL -- : actionpack (5.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2023-01-04T07:56:06.798267 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2023-01-04T07:56:06.807008 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2023-01-04T07:56:06.810246 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+I, [2023-01-04T07:56:06.827046 #1]  INFO -- :   Rendered collection of /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (7.5ms)
+I, [2023-01-04T07:56:06.833102 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+I, [2023-01-04T07:56:06.839469 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2023-01-04T07:56:06.841362 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2023-01-04T07:56:06.842650 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (43.0ms)
+I, [2023-01-04T07:56:08.636151 #1]  INFO -- : Started GET "/tasks" for 172.21.0.1 at 2023-01-04 07:56:08 +0000
+I, [2023-01-04T07:56:08.637704 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2023-01-04T07:56:08.640622 #1] FATAL -- :   
+F, [2023-01-04T07:56:08.642015 #1] FATAL -- : ActionController::RoutingError (No route matches [GET] "/tasks"):
+F, [2023-01-04T07:56:08.644767 #1] FATAL -- :   
+F, [2023-01-04T07:56:08.646245 #1] FATAL -- : actionpack (5.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2023-01-04T07:56:08.657106 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2023-01-04T07:56:08.663927 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2023-01-04T07:56:08.666850 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+I, [2023-01-04T07:56:08.682014 #1]  INFO -- :   Rendered collection of /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (8.6ms)
+I, [2023-01-04T07:56:08.688605 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+I, [2023-01-04T07:56:08.694775 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2023-01-04T07:56:08.696645 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+I, [2023-01-04T07:56:08.697534 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (39.4ms)
+I, [2023-01-04T07:56:09.205207 #1]  INFO -- : Started GET "/tasks" for 172.21.0.1 at 2023-01-04 07:56:09 +0000
+I, [2023-01-04T07:56:09.206885 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2023-01-04T07:56:09.209769 #1] FATAL -- :   
+F, [2023-01-04T07:56:09.211621 #1] FATAL -- : ActionController::RoutingError (No route matches [GET] "/tasks"):
+F, [2023-01-04T07:56:09.213555 #1] FATAL -- :   
+F, [2023-01-04T07:56:09.215076 #1] FATAL -- : actionpack (5.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2023-01-04T07:56:09.231583 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2023-01-04T07:56:09.239332 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2023-01-04T07:56:09.241469 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+I, [2023-01-04T07:56:09.257915 #1]  INFO -- :   Rendered collection of /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (7.8ms)
+I, [2023-01-04T07:56:09.265139 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+I, [2023-01-04T07:56:09.271309 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2023-01-04T07:56:09.272970 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+I, [2023-01-04T07:56:09.273807 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (41.3ms)
+I, [2023-01-04T07:56:09.934861 #1]  INFO -- : Started GET "/tasks" for 172.21.0.1 at 2023-01-04 07:56:09 +0000
+I, [2023-01-04T07:56:09.936629 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2023-01-04T07:56:09.939314 #1] FATAL -- :   
+F, [2023-01-04T07:56:09.940488 #1] FATAL -- : ActionController::RoutingError (No route matches [GET] "/tasks"):
+F, [2023-01-04T07:56:09.942064 #1] FATAL -- :   
+F, [2023-01-04T07:56:09.943399 #1] FATAL -- : actionpack (5.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2023-01-04T07:56:09.957177 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2023-01-04T07:56:09.963484 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2023-01-04T07:56:09.966016 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+I, [2023-01-04T07:56:09.983770 #1]  INFO -- :   Rendered collection of /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (10.6ms)
+I, [2023-01-04T07:56:09.990888 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+I, [2023-01-04T07:56:09.997720 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2023-01-04T07:56:09.999383 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+I, [2023-01-04T07:56:10.000293 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (42.2ms)
+I, [2023-01-04T07:56:31.951079 #1]  INFO -- : Started GET "/api/v1/tasks" for 172.21.0.1 at 2023-01-04 07:56:31 +0000
+I, [2023-01-04T07:56:31.953602 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2023-01-04T07:56:32.058472 #1] FATAL -- :   
+F, [2023-01-04T07:56:32.059960 #1] FATAL -- : ActionController::RoutingError (uninitialized constant ApplicationController):
+F, [2023-01-04T07:56:32.061193 #1] FATAL -- :   
+F, [2023-01-04T07:56:32.062393 #1] FATAL -- : app/controllers/api/v1/tasks_controller.rb:1:in `<top (required)>'
+I, [2023-01-04T07:56:32.109085 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2023-01-04T07:56:32.115509 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2023-01-04T07:56:32.117445 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+I, [2023-01-04T07:56:32.129521 #1]  INFO -- :   Rendered collection of /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (4.9ms)
+I, [2023-01-04T07:56:32.135752 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+I, [2023-01-04T07:56:32.141354 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2023-01-04T07:56:32.142589 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+I, [2023-01-04T07:56:32.143260 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (33.2ms)
+I, [2023-01-04T09:46:31.483544 #1]  INFO -- : Started GET "/tasks" for 172.21.0.1 at 2023-01-04 09:46:31 +0000
+I, [2023-01-04T09:46:31.486245 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2023-01-04T09:46:31.695582 #1] FATAL -- :   
+F, [2023-01-04T09:46:31.696905 #1] FATAL -- : ActionController::RoutingError (No route matches [GET] "/tasks"):
+F, [2023-01-04T09:46:31.699500 #1] FATAL -- :   
+F, [2023-01-04T09:46:31.700882 #1] FATAL -- : actionpack (5.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2023-01-04T09:46:31.724794 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2023-01-04T09:46:31.738624 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2023-01-04T09:46:31.741438 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+I, [2023-01-04T09:46:31.768971 #1]  INFO -- :   Rendered collection of /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (14.3ms)
+I, [2023-01-04T09:46:31.777842 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+I, [2023-01-04T09:46:31.785535 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2023-01-04T09:46:31.788102 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+I, [2023-01-04T09:46:31.789440 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (60.1ms)
+I, [2023-01-04T09:49:45.627135 #1]  INFO -- : Started GET "/api/v1/tasks" for 172.21.0.1 at 2023-01-04 09:49:45 +0000
+I, [2023-01-04T09:49:45.628809 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2023-01-04T09:49:45.682950 #1]  INFO -- : Processing by TasksController#index as HTML
+I, [2023-01-04T09:49:45.887876 #1]  INFO -- : Completed 500 Internal Server Error in 204ms (ActiveRecord: 0.0ms)
+
+
+F, [2023-01-04T09:49:45.889780 #1] FATAL -- :   
+F, [2023-01-04T09:49:45.980853 #1] FATAL -- : NameError (undefined local variable or method `login_url' for #<TasksController:0x00005556f12c6dc8>
+Did you mean?  logout_url):
+F, [2023-01-04T09:49:45.982029 #1] FATAL -- :   
+F, [2023-01-04T09:49:45.983201 #1] FATAL -- : app/controllers/application_controller.rb:12:in `login_required'
+I, [2023-01-04T09:49:46.022794 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+I, [2023-01-04T09:49:46.140625 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2023-01-04T09:49:46.144438 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+I, [2023-01-04T09:49:46.149657 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2023-01-04T09:49:46.152217 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+I, [2023-01-04T09:49:46.158629 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2023-01-04T09:49:46.161461 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+I, [2023-01-04T09:49:46.162937 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (138.8ms)
+I, [2023-01-04T10:08:27.865325 #1]  INFO -- : Started GET "/api/v1/tasks" for 172.21.0.1 at 2023-01-04 10:08:27 +0000
+I, [2023-01-04T10:08:27.868672 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2023-01-04T10:08:27.907129 #1]  INFO -- : Processing by TasksController#index as HTML
+I, [2023-01-04T10:08:28.114712 #1]  INFO -- : Completed 500 Internal Server Error in 207ms (ActiveRecord: 0.0ms)
+
+
+F, [2023-01-04T10:08:28.116639 #1] FATAL -- :   
+F, [2023-01-04T10:08:28.206686 #1] FATAL -- : NameError (undefined local variable or method `login_url' for #<TasksController:0x00007fb47c035b28>
+Did you mean?  logout_url):
+F, [2023-01-04T10:08:28.207710 #1] FATAL -- :   
+F, [2023-01-04T10:08:28.209421 #1] FATAL -- : app/controllers/application_controller.rb:12:in `login_required'
+I, [2023-01-04T10:08:28.260721 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+I, [2023-01-04T10:08:28.363763 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2023-01-04T10:08:28.368231 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+I, [2023-01-04T10:08:28.374406 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2023-01-04T10:08:28.376637 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+I, [2023-01-04T10:08:28.382645 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2023-01-04T10:08:28.384168 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+I, [2023-01-04T10:08:28.385219 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (123.5ms)
+I, [2023-01-04T10:12:19.497359 #1]  INFO -- : Started GET "/api/v1/tasks" for 172.21.0.1 at 2023-01-04 10:12:19 +0000
+I, [2023-01-04T10:12:19.499103 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2023-01-04T10:12:19.502812 #1]  INFO -- : Processing by TasksController#index as */*
+I, [2023-01-04T10:12:19.717033 #1]  INFO -- : Completed 500 Internal Server Error in 213ms (ActiveRecord: 0.0ms)
+
+
+F, [2023-01-04T10:12:19.719052 #1] FATAL -- :   
+F, [2023-01-04T10:12:19.819915 #1] FATAL -- : NameError (undefined local variable or method `login_url' for #<TasksController:0x00007fb46c16a300>
+Did you mean?  logout_url):
+F, [2023-01-04T10:12:19.822704 #1] FATAL -- :   
+F, [2023-01-04T10:12:19.824304 #1] FATAL -- : app/controllers/application_controller.rb:12:in `login_required'
+I, [2023-01-04T10:23:24.493247 #1]  INFO -- : Started GET "/tasks" for 172.21.0.1 at 2023-01-04 10:23:24 +0000
+I, [2023-01-04T10:23:24.495528 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2023-01-04T10:23:24.590110 #1] FATAL -- :   
+F, [2023-01-04T10:23:24.591587 #1] FATAL -- : ActionController::RoutingError (No route matches [GET] "/tasks"):
+F, [2023-01-04T10:23:24.592713 #1] FATAL -- :   
+F, [2023-01-04T10:23:24.594325 #1] FATAL -- : actionpack (5.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2023-01-04T10:23:24.611165 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2023-01-04T10:23:24.619042 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2023-01-04T10:23:24.621327 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+I, [2023-01-04T10:23:24.636284 #1]  INFO -- :   Rendered collection of /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (8.3ms)
+I, [2023-01-04T10:23:24.643597 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+I, [2023-01-04T10:23:24.649493 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2023-01-04T10:23:24.651446 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2023-01-04T10:23:24.652443 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.1ms)
+I, [2023-01-04T10:23:26.230784 #1]  INFO -- : Started GET "/tasks" for 172.21.0.1 at 2023-01-04 10:23:26 +0000
+I, [2023-01-04T10:23:26.233276 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2023-01-04T10:23:26.238111 #1] FATAL -- :   
+F, [2023-01-04T10:23:26.239852 #1] FATAL -- : ActionController::RoutingError (No route matches [GET] "/tasks"):
+F, [2023-01-04T10:23:26.242424 #1] FATAL -- :   
+F, [2023-01-04T10:23:26.244270 #1] FATAL -- : actionpack (5.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2023-01-04T10:23:26.258055 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2023-01-04T10:23:26.266304 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2023-01-04T10:23:26.268857 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+I, [2023-01-04T10:23:26.288503 #1]  INFO -- :   Rendered collection of /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (12.3ms)
+I, [2023-01-04T10:23:26.295495 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+I, [2023-01-04T10:23:26.307642 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2023-01-04T10:23:26.310868 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+I, [2023-01-04T10:23:26.312520 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (52.9ms)
+I, [2023-01-04T10:23:26.824408 #1]  INFO -- : Started GET "/tasks" for 172.21.0.1 at 2023-01-04 10:23:26 +0000
+I, [2023-01-04T10:23:26.826647 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2023-01-04T10:23:26.830676 #1] FATAL -- :   
+F, [2023-01-04T10:23:26.832323 #1] FATAL -- : ActionController::RoutingError (No route matches [GET] "/tasks"):
+F, [2023-01-04T10:23:26.835003 #1] FATAL -- :   
+F, [2023-01-04T10:23:26.837905 #1] FATAL -- : actionpack (5.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2023-01-04T10:23:26.857419 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2023-01-04T10:23:26.864277 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2023-01-04T10:23:26.866870 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+I, [2023-01-04T10:23:26.880973 #1]  INFO -- :   Rendered collection of /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (7.0ms)
+I, [2023-01-04T10:23:26.889957 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+I, [2023-01-04T10:23:26.897057 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2023-01-04T10:23:26.898985 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+I, [2023-01-04T10:23:26.900033 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (41.4ms)
+I, [2023-01-04T10:23:27.132786 #1]  INFO -- : Started GET "/tasks" for 172.21.0.1 at 2023-01-04 10:23:27 +0000
+I, [2023-01-04T10:23:27.135947 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2023-01-04T10:23:27.139819 #1] FATAL -- :   
+F, [2023-01-04T10:23:27.141007 #1] FATAL -- : ActionController::RoutingError (No route matches [GET] "/tasks"):
+F, [2023-01-04T10:23:27.142000 #1] FATAL -- :   
+F, [2023-01-04T10:23:27.143769 #1] FATAL -- : actionpack (5.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2023-01-04T10:23:27.160400 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2023-01-04T10:23:27.167665 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2023-01-04T10:23:27.169559 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+I, [2023-01-04T10:23:27.187581 #1]  INFO -- :   Rendered collection of /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (12.0ms)
+I, [2023-01-04T10:23:27.194143 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+I, [2023-01-04T10:23:27.199783 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2023-01-04T10:23:27.202332 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+I, [2023-01-04T10:23:27.203466 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (41.9ms)
+I, [2023-01-04T10:23:52.644940 #1]  INFO -- : Started GET "/tasks" for 172.21.0.1 at 2023-01-04 10:23:52 +0000
+I, [2023-01-04T10:23:52.648091 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2023-01-04T10:23:52.700642 #1] FATAL -- :   
+F, [2023-01-04T10:23:52.702309 #1] FATAL -- : ActionController::RoutingError (No route matches [GET] "/tasks"):
+F, [2023-01-04T10:23:52.704433 #1] FATAL -- :   
+F, [2023-01-04T10:23:52.705900 #1] FATAL -- : actionpack (5.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2023-01-04T10:23:52.730244 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2023-01-04T10:23:52.741768 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2023-01-04T10:23:52.744874 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+I, [2023-01-04T10:23:52.772429 #1]  INFO -- :   Rendered collection of /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (14.9ms)
+I, [2023-01-04T10:23:52.780799 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+I, [2023-01-04T10:23:52.787902 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2023-01-04T10:23:52.789464 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+I, [2023-01-04T10:23:52.790399 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (58.5ms)
+I, [2023-01-04T10:23:53.325213 #1]  INFO -- : Started GET "/tasks" for 172.21.0.1 at 2023-01-04 10:23:53 +0000
+I, [2023-01-04T10:23:53.327683 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2023-01-04T10:23:53.331652 #1] FATAL -- :   
+F, [2023-01-04T10:23:53.333498 #1] FATAL -- : ActionController::RoutingError (No route matches [GET] "/tasks"):
+F, [2023-01-04T10:23:53.334846 #1] FATAL -- :   
+F, [2023-01-04T10:23:53.336545 #1] FATAL -- : actionpack (5.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2023-01-04T10:23:53.354032 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2023-01-04T10:23:53.362045 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2023-01-04T10:23:53.364120 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+I, [2023-01-04T10:23:53.377727 #1]  INFO -- :   Rendered collection of /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (5.6ms)
+I, [2023-01-04T10:23:53.384198 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+I, [2023-01-04T10:23:53.391971 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2023-01-04T10:23:53.393757 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+I, [2023-01-04T10:23:53.395300 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.4ms)
+I, [2023-01-04T10:23:54.865763 #1]  INFO -- : Started GET "/tasks" for 172.21.0.1 at 2023-01-04 10:23:54 +0000
+I, [2023-01-04T10:23:54.867616 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2023-01-04T10:23:54.871029 #1] FATAL -- :   
+F, [2023-01-04T10:23:54.871991 #1] FATAL -- : ActionController::RoutingError (No route matches [GET] "/tasks"):
+F, [2023-01-04T10:23:54.873885 #1] FATAL -- :   
+F, [2023-01-04T10:23:54.875775 #1] FATAL -- : actionpack (5.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2023-01-04T10:23:54.895970 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2023-01-04T10:23:54.902968 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2023-01-04T10:23:54.905228 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+I, [2023-01-04T10:23:54.918867 #1]  INFO -- :   Rendered collection of /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (7.2ms)
+I, [2023-01-04T10:23:54.925515 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+I, [2023-01-04T10:23:54.931915 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2023-01-04T10:23:54.933436 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+I, [2023-01-04T10:23:54.934049 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.0ms)
+I, [2023-01-04T10:23:55.879849 #1]  INFO -- : Started GET "/tasks" for 172.21.0.1 at 2023-01-04 10:23:55 +0000
+I, [2023-01-04T10:23:55.881703 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2023-01-04T10:23:55.884799 #1] FATAL -- :   
+F, [2023-01-04T10:23:55.885820 #1] FATAL -- : ActionController::RoutingError (No route matches [GET] "/tasks"):
+F, [2023-01-04T10:23:55.887737 #1] FATAL -- :   
+F, [2023-01-04T10:23:55.888915 #1] FATAL -- : actionpack (5.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2023-01-04T10:23:55.905872 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2023-01-04T10:23:55.914377 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2023-01-04T10:23:55.916578 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+I, [2023-01-04T10:23:55.929789 #1]  INFO -- :   Rendered collection of /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (6.8ms)
+I, [2023-01-04T10:23:55.936609 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+I, [2023-01-04T10:23:55.942946 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2023-01-04T10:23:55.944684 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+I, [2023-01-04T10:23:55.945502 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (38.3ms)
+I, [2023-01-04T10:23:56.849673 #1]  INFO -- : Started GET "/tasks" for 172.21.0.1 at 2023-01-04 10:23:56 +0000
+I, [2023-01-04T10:23:56.851533 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2023-01-04T10:23:56.855495 #1] FATAL -- :   
+F, [2023-01-04T10:23:56.856668 #1] FATAL -- : ActionController::RoutingError (No route matches [GET] "/tasks"):
+F, [2023-01-04T10:23:56.857903 #1] FATAL -- :   
+F, [2023-01-04T10:23:56.859723 #1] FATAL -- : actionpack (5.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2023-01-04T10:23:56.878785 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2023-01-04T10:23:56.885086 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2023-01-04T10:23:56.886958 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+I, [2023-01-04T10:23:56.902951 #1]  INFO -- :   Rendered collection of /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (9.6ms)
+I, [2023-01-04T10:23:56.914986 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+I, [2023-01-04T10:23:56.924835 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2023-01-04T10:23:56.927063 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+I, [2023-01-04T10:23:56.928693 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (48.8ms)
+I, [2023-01-04T10:23:58.817079 #1]  INFO -- : Started GET "/tasks" for 172.21.0.1 at 2023-01-04 10:23:58 +0000
+I, [2023-01-04T10:23:58.820542 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2023-01-04T10:23:58.824004 #1] FATAL -- :   
+F, [2023-01-04T10:23:58.825612 #1] FATAL -- : ActionController::RoutingError (No route matches [GET] "/tasks"):
+F, [2023-01-04T10:23:58.827047 #1] FATAL -- :   
+F, [2023-01-04T10:23:58.828491 #1] FATAL -- : actionpack (5.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2023-01-04T10:23:58.852613 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2023-01-04T10:23:58.860263 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2023-01-04T10:23:58.862264 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+I, [2023-01-04T10:23:58.872161 #1]  INFO -- :   Rendered collection of /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (4.2ms)
+I, [2023-01-04T10:23:58.878890 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+I, [2023-01-04T10:23:58.885026 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2023-01-04T10:23:58.886757 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+I, [2023-01-04T10:23:58.887636 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.0ms)
+I, [2023-01-04T10:24:16.724797 #1]  INFO -- : Started GET "/tasks" for 172.21.0.1 at 2023-01-04 10:24:16 +0000
+I, [2023-01-04T10:24:16.726730 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2023-01-04T10:24:16.785745 #1] FATAL -- :   
+F, [2023-01-04T10:24:16.788674 #1] FATAL -- : ActionController::RoutingError (No route matches [GET] "/tasks"):
+F, [2023-01-04T10:24:16.790625 #1] FATAL -- :   
+F, [2023-01-04T10:24:16.791832 #1] FATAL -- : actionpack (5.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2023-01-04T10:24:16.809051 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2023-01-04T10:24:16.817968 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2023-01-04T10:24:16.820871 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+I, [2023-01-04T10:24:16.841579 #1]  INFO -- :   Rendered collection of /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (10.1ms)
+I, [2023-01-04T10:24:16.850367 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+I, [2023-01-04T10:24:16.859437 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2023-01-04T10:24:16.861857 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+I, [2023-01-04T10:24:16.863870 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (53.2ms)
+I, [2023-01-04T10:24:17.587576 #1]  INFO -- : Started GET "/tasks" for 172.21.0.1 at 2023-01-04 10:24:17 +0000
+I, [2023-01-04T10:24:17.589909 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2023-01-04T10:24:17.593350 #1] FATAL -- :   
+F, [2023-01-04T10:24:17.594900 #1] FATAL -- : ActionController::RoutingError (No route matches [GET] "/tasks"):
+F, [2023-01-04T10:24:17.596326 #1] FATAL -- :   
+F, [2023-01-04T10:24:17.598608 #1] FATAL -- : actionpack (5.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2023-01-04T10:24:17.619135 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2023-01-04T10:24:17.629294 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2023-01-04T10:24:17.634014 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+I, [2023-01-04T10:24:17.655740 #1]  INFO -- :   Rendered collection of /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (9.2ms)
+I, [2023-01-04T10:24:17.665980 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+I, [2023-01-04T10:24:17.676546 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2023-01-04T10:24:17.680020 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+I, [2023-01-04T10:24:17.681386 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (60.0ms)
+I, [2023-01-04T10:25:52.785289 #1]  INFO -- : Started GET "/tasks" for 172.21.0.1 at 2023-01-04 10:25:52 +0000
+I, [2023-01-04T10:25:52.788419 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2023-01-04T10:25:52.851740 #1] FATAL -- :   
+F, [2023-01-04T10:25:52.853485 #1] FATAL -- : ActionController::RoutingError (No route matches [GET] "/tasks"):
+F, [2023-01-04T10:25:52.856057 #1] FATAL -- :   
+F, [2023-01-04T10:25:52.859096 #1] FATAL -- : actionpack (5.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2023-01-04T10:25:52.892524 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2023-01-04T10:25:52.900699 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2023-01-04T10:25:52.902925 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+I, [2023-01-04T10:25:52.922734 #1]  INFO -- :   Rendered collection of /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (10.6ms)
+I, [2023-01-04T10:25:52.931472 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+I, [2023-01-04T10:25:52.938033 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2023-01-04T10:25:52.942098 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+I, [2023-01-04T10:25:52.944026 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.6ms)
+I, [2023-01-04T10:25:53.691717 #1]  INFO -- : Started GET "/tasks" for 172.21.0.1 at 2023-01-04 10:25:53 +0000
+I, [2023-01-04T10:25:53.694285 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2023-01-04T10:25:53.699684 #1] FATAL -- :   
+F, [2023-01-04T10:25:53.702452 #1] FATAL -- : ActionController::RoutingError (No route matches [GET] "/tasks"):
+F, [2023-01-04T10:25:53.703863 #1] FATAL -- :   
+F, [2023-01-04T10:25:53.705076 #1] FATAL -- : actionpack (5.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2023-01-04T10:25:53.724767 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2023-01-04T10:25:53.731637 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2023-01-04T10:25:53.733637 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+I, [2023-01-04T10:25:53.747280 #1]  INFO -- :   Rendered collection of /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (6.9ms)
+I, [2023-01-04T10:25:53.755540 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+I, [2023-01-04T10:25:53.763679 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2023-01-04T10:25:53.765460 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+I, [2023-01-04T10:25:53.766470 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.5ms)
+I, [2023-01-04T10:27:38.605795 #1]  INFO -- : Started GET "/api/v1/tasks" for 172.21.0.1 at 2023-01-04 10:27:38 +0000
+I, [2023-01-04T10:27:38.608442 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2023-01-04T10:27:38.650122 #1]  INFO -- : Processing by TasksController#index as */*
+I, [2023-01-04T10:27:38.849765 #1]  INFO -- : Completed 500 Internal Server Error in 199ms (ActiveRecord: 0.0ms)
+
+
+F, [2023-01-04T10:27:38.851762 #1] FATAL -- :   
+F, [2023-01-04T10:27:38.939183 #1] FATAL -- : NameError (undefined local variable or method `logout_PATH' for #<TasksController:0x00007fb47c0db460>
+Did you mean?  root_path):
+F, [2023-01-04T10:27:38.941041 #1] FATAL -- :   
+F, [2023-01-04T10:27:38.942963 #1] FATAL -- : app/controllers/application_controller.rb:12:in `login_required'
+I, [2023-01-04T10:38:29.675276 #1]  INFO -- : Started GET "/tasks" for 172.21.0.1 at 2023-01-04 10:38:29 +0000
+I, [2023-01-04T10:38:29.691879 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2023-01-04T10:38:29.765222 #1] FATAL -- :   
+F, [2023-01-04T10:38:29.766873 #1] FATAL -- : ActionController::RoutingError (No route matches [GET] "/tasks"):
+F, [2023-01-04T10:38:29.768953 #1] FATAL -- :   
+F, [2023-01-04T10:38:29.770989 #1] FATAL -- : actionpack (5.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2023-01-04T10:38:29.788929 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2023-01-04T10:38:29.797242 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2023-01-04T10:38:29.799476 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+I, [2023-01-04T10:38:29.819267 #1]  INFO -- :   Rendered collection of /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (11.0ms)
+I, [2023-01-04T10:38:29.829339 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.1ms)
+I, [2023-01-04T10:38:29.838540 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2023-01-04T10:38:29.840917 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+I, [2023-01-04T10:38:29.842168 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (52.1ms)
+I, [2023-01-04T10:39:27.851167 #1]  INFO -- : Started GET "/tasks" for 172.21.0.1 at 2023-01-04 10:39:27 +0000
+I, [2023-01-04T10:39:27.853991 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2023-01-04T10:39:27.858349 #1] FATAL -- :   
+F, [2023-01-04T10:39:27.860566 #1] FATAL -- : ActionController::RoutingError (No route matches [GET] "/tasks"):
+F, [2023-01-04T10:39:27.863075 #1] FATAL -- :   
+F, [2023-01-04T10:39:27.865020 #1] FATAL -- : actionpack (5.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2023-01-04T10:39:27.886241 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2023-01-04T10:39:27.893923 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2023-01-04T10:39:27.897079 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+I, [2023-01-04T10:39:27.918038 #1]  INFO -- :   Rendered collection of /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (12.7ms)
+I, [2023-01-04T10:39:27.925252 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+I, [2023-01-04T10:39:27.932305 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2023-01-04T10:39:27.933866 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+I, [2023-01-04T10:39:27.934602 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (46.7ms)
+I, [2023-01-04T10:39:28.440185 #1]  INFO -- : Started GET "/tasks" for 172.21.0.1 at 2023-01-04 10:39:28 +0000
+I, [2023-01-04T10:39:28.442810 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2023-01-04T10:39:28.448109 #1] FATAL -- :   
+F, [2023-01-04T10:39:28.449626 #1] FATAL -- : ActionController::RoutingError (No route matches [GET] "/tasks"):
+F, [2023-01-04T10:39:28.451190 #1] FATAL -- :   
+F, [2023-01-04T10:39:28.452191 #1] FATAL -- : actionpack (5.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2023-01-04T10:39:28.475142 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2023-01-04T10:39:28.481464 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2023-01-04T10:39:28.483432 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+I, [2023-01-04T10:39:28.497397 #1]  INFO -- :   Rendered collection of /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (6.9ms)
+I, [2023-01-04T10:39:28.503587 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+I, [2023-01-04T10:39:28.512483 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2023-01-04T10:39:28.515007 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2023-01-04T10:39:28.516251 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.1ms)
+I, [2023-01-04T10:39:28.678139 #1]  INFO -- : Started GET "/tasks" for 172.21.0.1 at 2023-01-04 10:39:28 +0000
+I, [2023-01-04T10:39:28.680630 #1]  INFO -- : Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2023-01-04T10:39:28.684246 #1] FATAL -- :   
+F, [2023-01-04T10:39:28.685350 #1] FATAL -- : ActionController::RoutingError (No route matches [GET] "/tasks"):
+F, [2023-01-04T10:39:28.686935 #1] FATAL -- :   
+F, [2023-01-04T10:39:28.688177 #1] FATAL -- : actionpack (5.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8) lib/rails/rack/logger.rb:28:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2023-01-04T10:39:28.706182 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2023-01-04T10:39:28.716210 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2023-01-04T10:39:28.718507 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+I, [2023-01-04T10:39:28.743844 #1]  INFO -- :   Rendered collection of /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (17.8ms)
+I, [2023-01-04T10:39:28.750023 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+I, [2023-01-04T10:39:28.756404 #1]  INFO -- :   Rendering /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2023-01-04T10:39:28.758581 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2023-01-04T10:39:28.759904 #1]  INFO -- :   Rendered /usr/local/bundle/gems/actionpack-5.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.6ms)
