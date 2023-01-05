@@ -1,2 +1,2 @@
 FROM node:18.12.1-alpine
-WORKDIR /usr/src/todo
+WORKDIR /usr/local/todo
