@@ -88,3 +88,6 @@ gem 'rack-cors'
 # deviseのログイン機能実装
 gem 'devise'
 gem 'devise_token_auth'
+
+# MySQLに変更
+gem 'mysql2'
