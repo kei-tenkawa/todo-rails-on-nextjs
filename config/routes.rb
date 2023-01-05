@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  namespace 'api' do
-    namespace 'v1' do
+  scope :api do
+    scope :v1 do
       # admin
       namespace :admin do
         resources :users do

@@ -9,4 +9,7 @@ docker compose run web rails ---
 
 // routes一覧確認
 docker compose run web rails routes
+
+// gemfileを編集後
+docker compose build
 ```

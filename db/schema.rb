@@ -60,15 +60,16 @@ ActiveRecord::Schema.define(version: 2022_06_20_053737) do
 #   Unknown type 'task_status' for column 'status'
 
   create_table "users", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
-    t.string "password_digest"
+    t.string "name", null: false
+    t.string "email", null: false
+    t.string "password_digest", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean "admin", default: false, null: false
     t.bigint "department_id"
     t.bigint "section_id"
     t.index ["department_id"], name: "index_users_on_department_id"
+    t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["section_id"], name: "index_users_on_section_id"
   end
 
