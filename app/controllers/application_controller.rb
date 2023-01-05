@@ -1,4 +1,4 @@
-class ApplicationController < ActionController::Base
+class ApplicationController < ActionController::API
   helper_method :current_user
   before_action :login_required
 
@@ -9,6 +9,6 @@ class ApplicationController < ActionController::Base
   end
 
   def login_required
-    redirect_to login_url unless current_user
+    redirect_to login_path unless current_user
   end
 end
