@@ -81,3 +81,10 @@ gem 'jquery-rails'
 gem 'enum_help'
 
 gem 'select2-rails'
+
+# CORS対策
+gem 'rack-cors'
+
+# deviseのログイン機能実装
+gem 'devise'
+gem 'devise_token_auth'
