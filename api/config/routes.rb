@@ -7,10 +7,11 @@ Rails.application.routes.draw do
           get 'sections', on: :member
         end
       end
-      # ログイン, ログアウト
-      get '/login', to: 'sessions#new'
-      post '/login', to: 'sessions#create'
-      delete '/logout', to: 'sessions#destroy'
+      # ログイン
+      resources :login, only: %i[new create]
+
+      # ログアウト
+      resources :logout, only: [:destroy]
       # TODO
       root to: 'tasks#index'
       resources :tasks do
