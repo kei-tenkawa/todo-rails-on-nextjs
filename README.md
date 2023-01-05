@@ -6,6 +6,7 @@
 [Ruby on RailsのAPIのconfig/routes.rb書き方【ルーティング備忘録】](https://usconsort.com/rails-routes/)
 [Next.js + Ruby on Rails(APIモード) on Docker 構築手順](https://zenn.dev/taku1115/articles/6c9fa97ab37e38)
 ```
+// 基本コマンド
 docker compose run api rails ---
 
 // routes一覧確認
