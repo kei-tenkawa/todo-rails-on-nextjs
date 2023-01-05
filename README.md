@@ -24,4 +24,7 @@ docker compose run api rails db:migrate
 
 // db削除
 docker compose run api rails db:drop
+
+// サービスのbashに入る
+docker compose exec api /bin/bash
 ```
