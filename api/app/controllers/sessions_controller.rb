@@ -1,7 +1,10 @@
 class SessionsController < ApplicationController
   skip_before_action :login_required
+  skip_before_action :set_csrf_token_header
 
-  def new; end
+  def new
+    render json: { message: "success" }
+  end
 
   def create
     user = User.find_by(email: session_params[:email])
