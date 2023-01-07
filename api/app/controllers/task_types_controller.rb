@@ -3,12 +3,14 @@ class TaskTypesController < ApplicationController
   def index
     @q = TaskType.all.ransack(params[:q])
     @task_types = @q.result(distinct: true).page(params[:page])  # ソート
+    render json: @task_types
   end
 
   def show; end
 
   def new
     @task_type = TaskType.new
+    render json: @task_type
   end
 
   def edit; end
@@ -20,7 +22,7 @@ class TaskTypesController < ApplicationController
       return
     end
     if @task_type.save
-      redirect_to @task_type, notice: "タスク「#{@task_type.name}]を登録しました。"
+      true
     else
       render :new
     end
@@ -28,7 +30,7 @@ class TaskTypesController < ApplicationController
 
   def update
     if @task_type.update(task_type_params)
-      redirect_to task_type_url(@task_type), notice: "タスクの種類「#{@task_type.name}」を更新しました。"
+      true
     else
       render :edit
     end
@@ -37,7 +39,7 @@ class TaskTypesController < ApplicationController
   def destroy
     @task_type = TaskType.find(params[:id])
     @task_type.destroy
-    redirect_to task_types_url, notice: "ユーザ「#{@task_type.name}」を削除しました。"
+    true
   end
 
   private

@@ -10,7 +10,7 @@ require 'csv'
 
 # 開発本部 開発部,開発6ｸﾞﾙｰﾌﾟ
 # seedする前に一回消す
-CSV.foreach('db/dpseed.csv', headers: true) do |row|
+CSV.foreach('seed/dpseed.csv', headers: true) do |row|
   if row[1].blank?
     Department.create(name: row[0])
   else

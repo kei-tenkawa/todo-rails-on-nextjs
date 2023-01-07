@@ -10,6 +10,8 @@ class TasksController < ApplicationController
       format.html
       format.csv { send_data @tasks.generate_csv, filename: "task-#{Time.zone.now.strftime('%Y%m%d%S')}.csv" }
     end
+
+    render json: @tasks
   end
 
   def show; end

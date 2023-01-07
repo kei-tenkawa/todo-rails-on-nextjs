@@ -63,5 +63,4 @@ Rails.application.configure do
   config.logger = Logger.new('log/development.log', 'daily')
 
   config.active_job.queue_adapter = :sidekiq
-  config.hosts << "api"
 end
