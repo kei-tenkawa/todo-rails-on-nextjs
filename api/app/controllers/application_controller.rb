@@ -1,4 +1,7 @@
 class ApplicationController < ActionController::API
+  # Cookie使用
+  include ActionController::Cookies
+
   helper_method :current_user
   before_action :login_required
 
@@ -9,6 +12,7 @@ class ApplicationController < ActionController::API
   end
 
   def login_required
-    redirect_to login_index_path unless current_user
+    return if @current_user
+    render json: { error: 'ログインしてください' }, status: :unauthorized
   end
 end
