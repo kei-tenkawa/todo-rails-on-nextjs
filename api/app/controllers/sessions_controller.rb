@@ -1,6 +1,7 @@
 class SessionsController < ApplicationController
   skip_before_action :login_required
-  skip_before_action :set_csrf_token_header
+  skip_before_action :verify_authenticity_token, only: :create
+  after_action :set_csrf_token_header, only: [:create, :show]
 
   def new
     render json: { message: "success" }

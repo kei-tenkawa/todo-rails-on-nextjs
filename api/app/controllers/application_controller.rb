@@ -6,7 +6,6 @@ class ApplicationController < ActionController::API
 
   helper_method :current_user
   before_action :login_required
-  before_action :set_csrf_token_header
 
   # CSRF tokenの確認を有効にする
   protect_from_forgery with: :exception
