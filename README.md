@@ -9,8 +9,6 @@
 [React + Rails(API)で tokenを用いたCSRF対策の基礎(のメモ)](https://kappaz.hatenablog.com/entry/2020/08/17/141127)<br>
 [Rails API + SPAのCSRF対策例](https://zenn.dev/leaner_dev/articles/20210930-rails-api-spa-csrf)<br>
 [rails-apiのsession認証備忘録](https://zenn.dev/tama8021/scraps/a51482322a593d)
-
-# 神のサイト
 [Next.js 日本語マニュアル](https://nextjs-ja-translation-docs.vercel.app/)
 
 # 基本コマンド
@@ -36,6 +34,10 @@ docker compose run api rails db:drop
 
 // サービスのbashに入る
 docker compose exec api /bin/bash
+
+// railsコンソールに入る
+rails c
+
 ```
 
 # DBシェル

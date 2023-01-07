@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
   after_action :set_csrf_token_header, only: [:create, :show]
 
   def new
-    render json: { message: "success" }
+    render status: :ok, json: { message: "success" }
   end
 
   def create
@@ -19,18 +19,17 @@ class SessionsController < ApplicationController
     else
       payload = { errors: ['メールアドレスまたはパスワードが正しくありません。'] }
     end
-    render json: payload
+    render status: :ok, json: payload
   end
 
   def destroy
     reset_session
-    payload = { message: 'ログアウトしました' }
-    render json: payload
+    render status: :ok, json: { message: 'ログアウトしました' }
   end
 
   private
 
   def session_params
-    params.require(:session).permit(:email, :password)
+    params.permit(:email, :password)
   end
 end

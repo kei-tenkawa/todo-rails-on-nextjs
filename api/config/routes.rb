@@ -21,7 +21,7 @@ Rails.application.routes.draw do
       resources :task_types
 
       # 日報作成
-      resources :daily_report, only: %i[index create]
+      resources :daily_report, only: :create
     end
   end
 end
