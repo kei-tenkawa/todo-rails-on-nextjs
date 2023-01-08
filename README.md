@@ -11,6 +11,13 @@
 [rails-apiのsession認証備忘録](https://zenn.dev/tama8021/scraps/a51482322a593d)
 [Next.js 日本語マニュアル](https://nextjs-ja-translation-docs.vercel.app/)
 
+# SPAあたりのお話
+[SPA, SSR, SSGって結局なんなんだっけ？](https://zenn.dev/rinda_1994/articles/e6d8e3150b312d)
+[結局ReactとNext.jsのどちらで開発を進めればいいの？](https://qiita.com/hiroki-yama-1118/items/b3388c5dcb155e2e367d)
+[SPA/MPAとCSR/SSR/SSGの分類](https://zenn.dev/mt877/articles/6dc3afe99ee794)
+[【Next.js入門】Next.jsとは？CSR、SSR、SSG、ISRについて](https://blog-mayo.com/2022/10/1211/)
+
+
 # 基本コマンド
 ```
 // 基本構文
